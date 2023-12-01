@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "email": "jane@example.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introduction to JSON",
+      "content": "JSON stands for JavaScript Object Notation...",
+      "author_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Working with Databases",
+      "content": "Databases are essential for storing and retrieving data...",
+      "author_id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "Great post!",
+      "post_id": 1,
+      "user_id": 2
+    },
+    {
+      "id": 2,
+      "text": "Thanks for sharing!",
+      "post_id": 2,
+      "user_id": 1
+    },
+    {
+      "email": "saaouAAi115@gmail.com",
+      "password": "123456789",
+      "id": 3
+    },
+    [
+      {
+        "text": "yassin howari !",
+        "post_id": 1,
+        "user_id": 2
+      }
+    ],
+    [
+      {
+        "text": "anoer  !",
+        "post_id": 1,
+        "user_id": 2
+      }
+    ]
+  ]
+}
