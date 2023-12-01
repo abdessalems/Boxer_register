@@ -113,6 +113,95 @@
         />
       </div>
 
+      <!-- Boxer Profile Information -->
+      <div class="form-group">
+        <label for="fightNumber">Fight Number:</label>
+        <input
+          type="number"
+          id="fightNumber"
+          v-model="fightNumber"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="win">Number of Wins:</label>
+        <input
+          type="number"
+          id="win"
+          v-model="win"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="lose">Number of Losses:</label>
+        <input
+          type="number"
+          id="lose"
+          v-model="lose"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="ko">Number of Knockouts:</label>
+        <input
+          type="number"
+          id="ko"
+          v-model="ko"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="gymNumber">Gym Number:</label>
+        <input
+          type="number"
+          id="gymNumber"
+          v-model="gymNumber"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          v-model="title"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="photoLink">Link to Photo:</label>
+        <input
+          type="text"
+          id="photoLink"
+          v-model="photoLink"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="trainerName">Trainer Name:</label>
+        <input
+          type="text"
+          id="trainerName"
+          v-model="trainerName"
+          class="form-control"
+          required
+        />
+      </div>
+
       <div class="form-group form-check">
         <input
           type="checkbox"
@@ -149,26 +238,22 @@ export default {
       dateOfBirth: "",
       gender: "",
       nationality: "",
+
+      // Boxer Profile Information
+      fightNumber: null,
+      win: null,
+      lose: null,
+      ko: null,
+      gymNumber: null,
+      title: "",
+      photoLink: "",
+      trainerName: "",
+
       termsAndConditions: false,
     };
   },
   methods: {
-    registerBoxer() {
-      // Perform your registration logic here
-      console.log("Boxer Registration Data:", {
-        firstName: this.firstName,
-        lastName: this.lastName,
-        email: this.email,
-        password: this.password,
-        confirmPassword: this.confirmPassword,
-        height: this.height,
-        weight: this.weight,
-        dateOfBirth: this.dateOfBirth,
-        gender: this.gender,
-        nationality: this.nationality,
-        termsAndConditions: this.termsAndConditions,
-      });
-    },
+    registerBoxer() {},
   },
 };
 </script>
