@@ -31,12 +31,8 @@
 </template>
 
 <script>
-import LoginForm from "@/components/Login/Login.vue";
 export default {
   name: "LoginForm",
-  components: {
-    LoginForm,
-  },
   data() {
     return {
       loginEmail: "",

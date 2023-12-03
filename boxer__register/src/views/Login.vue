@@ -7,9 +7,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// eslint-disable-next-line
 import LoginForm from "@/components/Login/Login.vue";
-
 export default {
   name: "LoginView",
   components: {
