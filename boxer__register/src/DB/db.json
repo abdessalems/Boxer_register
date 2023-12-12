@@ -1,61 +1,61 @@
 {
-  "users": [
+  "boxers": [
     {
       "id": 1,
-      "username": "john_doe",
-      "email": "john@example.com"
+      "firstName": "Muhammad",
+      "lastName": "Ali",
+      "email": "muhammad.ali@example.com",
+      "height": 188,
+      "weight": 100,
+      "dateOfBirth": "1942-01-17",
+      "gender": "male",
+      "nationality": "American",
+      "fightNumber": 56,
+      "win": 56,
+      "lose": 5,
+      "ko": 37,
+      "gymNumber": 123,
+      "title": "The Greatest",
+      "photoLink": "https://example.com/muhammad-ali-photo.jpg",
+      "trainerName": "Angelo Dundee"
     },
     {
       "id": 2,
-      "username": "jane_smith",
-      "email": "jane@example.com"
+      "firstName": "Mike",
+      "lastName": "Tyson",
+      "email": "mike.tyson@example.com",
+      "height": 178,
+      "weight": 109,
+      "dateOfBirth": "1966-06-30",
+      "gender": "male",
+      "nationality": "American",
+      "fightNumber": 58,
+      "win": 50,
+      "lose": 6,
+      "ko": 44,
+      "gymNumber": 456,
+      "title": "Iron Mike",
+      "photoLink": "https://example.com/mike-tyson-photo.jpg",
+      "trainerName": "Cus D'Amato"
+    },
+    {
+      "id": 3,
+      "firstName": "Laila",
+      "lastName": "Ali",
+      "email": "laila.ali@example.com",
+      "height": 178,
+      "weight": 160,
+      "dateOfBirth": "1977-12-30",
+      "gender": "female",
+      "nationality": "American",
+      "fightNumber": 24,
+      "win": 24,
+      "lose": 0,
+      "ko": 21,
+      "gymNumber": 789,
+      "title": "She Bee Stingin'",
+      "photoLink": "https://example.com/laila-ali-photo.jpg",
+      "trainerName": "Muhammad Ali (her father)"
     }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "Introduction to JSON",
-      "content": "JSON stands for JavaScript Object Notation...",
-      "author_id": 1
-    },
-    {
-      "id": 2,
-      "title": "Working with Databases",
-      "content": "Databases are essential for storing and retrieving data...",
-      "author_id": 2
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "text": "Great post!",
-      "post_id": 1,
-      "user_id": 2
-    },
-    {
-      "id": 2,
-      "text": "Thanks for sharing!",
-      "post_id": 2,
-      "user_id": 1
-    },
-    {
-      "email": "saaouAAi115@gmail.com",
-      "password": "123456789",
-      "id": 3
-    },
-    [
-      {
-        "text": "yassin howari !",
-        "post_id": 1,
-        "user_id": 2
-      }
-    ],
-    [
-      {
-        "text": "anoer  !",
-        "post_id": 1,
-        "user_id": 2
-      }
-    ]
   ]
 }
