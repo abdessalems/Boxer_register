@@ -1,3 +1,5 @@
+// router/index.js
+
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Login from "../views/Login.vue";
@@ -17,12 +19,12 @@ const routes = [
   },
   {
     path: "/login",
-    name: "Login",
+    name: "login",
     component: Login,
   },
   {
-    path: "/signup", // Update the path to be consistent
-    name: "Signup",
+    path: "/signup",
+    name: "signup",
     component: Signup,
   },
 ];
