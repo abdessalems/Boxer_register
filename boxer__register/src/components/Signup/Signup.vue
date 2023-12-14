@@ -70,8 +70,6 @@
         <input type="text" id="weight" v-model="weight" class="form-control" />
       </div>
 
-      <!-- ... (Other additional form groups) ... -->
-
       <!-- Boxer Profile Information -->
       <div class="form-group">
         <label for="fightNumber">Fight Number:</label>
@@ -94,11 +92,7 @@
     </form>
   </div>
 </template>
-
 <script>
-import axios from "axios";
-import bcrypt from "bcryptjs";
-
 export default {
   name: "SignupForm",
   data() {
@@ -131,41 +125,7 @@ export default {
     };
   },
   methods: {
-    async registerBoxer() {
-      try {
-        // Hash the password before sending it to the server
-        const hashedPassword = await bcrypt.hash(this.password, 10);
-
-        const boxerData = {
-          firstName: this.firstName,
-          lastName: this.lastName,
-          email: this.email,
-          password: hashedPassword,
-          confirmPassword: this.confirmPassword,
-          height: this.height,
-          weight: this.weight,
-          dateOfBirth: this.dateOfBirth,
-          gender: this.gender,
-          nationality: this.nationality,
-          fightNumber: this.fightNumber,
-          win: this.win,
-          lose: this.lose,
-          ko: this.ko,
-          gymNumber: this.gymNumber,
-          title: this.title,
-          photoLink: this.photoLink,
-          trainerName: this.trainerName,
-          termsAndConditions: this.termsAndConditions,
-        };
-
-        const response = await axios.post("/api/boxers", boxerData);
-        console.log("Boxer registered successfully:", response.data);
-        // Handle success, e.g., redirect to a success page
-      } catch (error) {
-        console.error("Error registering boxer:", error);
-        // Handle errors, e.g., show an error message to the user
-      }
-    },
+    async registerBoxer() {},
   },
 };
 </script>
