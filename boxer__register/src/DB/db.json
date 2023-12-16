@@ -56,6 +56,58 @@
       "title": "She Bee Stingin'",
       "photoLink": "https://example.com/laila-ali-photo.jpg",
       "trainerName": "Muhammad Ali (her father)"
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "SAADAOUI",
+      "height": "14",
+      "weight": "134",
+      "fightNumber": "12",
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 4
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "SAADAOUI",
+      "height": "14",
+      "weight": "134",
+      "fightNumber": "12",
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 5
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "11111",
+      "height": "14",
+      "weight": "134",
+      "fightNumber": null,
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 6
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "11111",
+      "height": "14",
+      "weight": "134",
+      "fightNumber": null,
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 7
     }
   ]
 }

@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 <template>
   <div>
     <form @submit.prevent="registerBoxer" class="col-md-6 offset-md-3 mt-5">
@@ -86,13 +88,47 @@
         <input type="text" id="win" v-model="win" class="form-control" />
       </div>
 
-      <!-- ... (Other profile form groups) ... -->
+      <div class="form-group">
+        <label for="losses">Losses:</label>
+        <input type="text" id="losses" v-model="losses" class="form-control" />
+      </div>
 
-      <button type="submit" class="btn btn-primary">Sign Up</button>
+      <div class="form-group">
+        <label for="kos">KOs:</label>
+        <input type="text" id="kos" v-model="kos" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="gymNumber">Gym Number:</label>
+        <input type="text" id="gymNumber" v-model="gymNumber" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" v-model="title" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="imageLink">Image Link:</label>
+        <input type="text" id="imageLink" v-model="imageLink" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="trainerName">Trainer Name:</label>
+        <input type="text" id="trainerName" v-model="trainerName" class="form-control" />
+      </div>
+
+      <!-- ... (Other profile form groups) ... -->
+      <button v-on:click="registerBoxer" type="submit" class="btn btn-primary">
+        SignUp
+      </button>
     </form>
   </div>
 </template>
+
 <script>
+// eslint-disable-next-line prettier/prettier
+import axios from "axios";
 export default {
   name: "SignupForm",
   data() {
@@ -125,7 +161,35 @@ export default {
     };
   },
   methods: {
-    async registerBoxer() {},
+    async registerBoxer() {
+      try {
+        const result = await axios.post("http://localhost:3000/boxers", {
+          first_name: this.firstName,
+          last_name: this.lastName,
+          email: this.email,
+          password: this.password,
+          phone_number: this.phoneNumber,
+          height: this.height,
+          weight: this.weight,
+          fightNumber: this.fightNumber,
+          wins: this.wins,
+          losses: this.losses,
+          kos: this.kos,
+          gym_number: this.gymNumber,
+          boxing_title: this.title,
+          image_link: this.imageLink,
+          trainer_name: this.trainerName,
+        });
+
+        console.log(result); // Log the result if needed
+      } catch (error) {
+        console.error("Error during registration:", error);
+      }
+    },
   },
 };
 </script>
+
+<style scoped>
+/* Add your scoped styles here */
+</style>
