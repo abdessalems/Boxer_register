@@ -108,6 +108,32 @@
       "boxing_title": "",
       "trainer_name": "",
       "id": 7
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "",
+      "height": null,
+      "weight": null,
+      "fightNumber": null,
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 8
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "",
+      "height": null,
+      "weight": null,
+      "fightNumber": null,
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 9
     }
   ]
 }

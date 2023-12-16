@@ -162,7 +162,6 @@ export default {
   },
   methods: {
     async registerBoxer() {
-      try {
         const result = await axios.post("http://localhost:3000/boxers", {
           first_name: this.firstName,
           last_name: this.lastName,
@@ -181,10 +180,13 @@ export default {
           trainer_name: this.trainerName,
         });
 
-        console.log(result); // Log the result if needed
-      } catch (error) {
-        console.error("Error during registration:", error);
-      }
+        console.log(result); 
+        if(result.status==201)
+        {
+          alert('Registration Successful! Please Log In to Continue');
+          localStorage.setItem("boxer-info",JSON.stringify(result.data))
+        }
+      
     },
   },
 };
