@@ -4,8 +4,6 @@
   <div>
     <form @submit.prevent="registerBoxer" class="col-md-6 offset-md-3 mt-5">
       <h2 class="mb-4">Boxer Signup</h2>
-
-      <!-- Basic Information -->
       <div class="form-group">
         <label for="firstName">First Name:</label>
         <input
@@ -185,10 +183,19 @@ export default {
         {
           alert('Registration Successful! Please Log In to Continue');
           localStorage.setItem("boxer-info",JSON.stringify(result.data))
+          this.$router.push({name:'home'});
         }
       
     },
   },
+  mounted()
+  {
+    let boxer=localStorage.getItem("boxer-info");
+    if (boxer)
+    {
+      this.$router.push({name:'home'});
+    }
+  }
 };
 </script>
 
