@@ -1,5 +1,8 @@
 <template>
   <nav>
+    <img class="logo" src="@/assets/logo.png" alt="Logo" />
+  </nav>
+  <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
@@ -22,6 +25,10 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+}
+.logo {
+  width: 200px;
+  margin-bottom: 10px;
 }
 
 nav a.router-link-exact-active {
