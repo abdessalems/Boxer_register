@@ -1,7 +1,12 @@
 <template>
   <nav>
+    <nav>
+      <img class="logo" src="@/assets/logo.png" alt="Logo" />
+    </nav>
+    <router-link to="/signup">Signup</router-link> |
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/login">Login</router-link>
+
   </nav>
   <router-view />
 </template>
@@ -13,6 +18,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 10px;
 }
 
 nav {

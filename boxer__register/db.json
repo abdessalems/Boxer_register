@@ -74,6 +74,19 @@
       "first_name": "SAADAOUI",
       "last_name": "ABDESSALEM",
       "email": "ABDESSALEMSAA@gmail.com",
+      "password": "SAADAOUI",
+      "height": "14",
+      "weight": "134",
+      "fightNumber": "12",
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 5
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
       "password": "11111",
       "height": "14",
       "weight": "134",
@@ -121,6 +134,51 @@
       "boxing_title": "",
       "trainer_name": "",
       "id": 9
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "",
+      "height": null,
+      "weight": null,
+      "fightNumber": null,
+      "gym_number": null,
+      "boxing_title": "",
+      "trainer_name": "",
+      "id": 10
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "1234",
+      "height": "324",
+      "weight": "235",
+      "fightNumber": "12",
+      "losses": "12",
+      "kos": "12",
+      "gym_number": "12",
+      "boxing_title": "ZMOG",
+      "image_link": "EPGK",
+      "trainer_name": "DPDGS",
+      "id": 11
+    },
+    {
+      "first_name": "SAADAOUI",
+      "last_name": "ABDESSALEM",
+      "email": "ABDESSALEMSAA@gmail.com",
+      "password": "1234",
+      "height": "324",
+      "weight": "235",
+      "fightNumber": "12",
+      "losses": "12",
+      "kos": "12",
+      "gym_number": "12",
+      "boxing_title": "ZMOG",
+      "image_link": "EPGK",
+      "trainer_name": "DPDGS",
+      "id": 12
     }
   ]
 }
