@@ -1,16 +1,17 @@
 {
-  "name": "vue-project",
+  "name": "client",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
-  },
+  "dev": "vite",
+  "build": "run-p type-check \"build-only {@}\" --",
+  "serve": "vite preview",
+  "build-only": "vite build",
+  "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
+  "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+  "format": "prettier --write src/"
+},
+
   "dependencies": {
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
