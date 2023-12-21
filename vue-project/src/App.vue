@@ -4,8 +4,17 @@
       <img class="logo" src="@/assets/logo.png" alt="Logo" />
     </nav>
     <nav class="nav-links">
-      <router-link to="/" class="nav-link">Home</router-link> |
-      <router-link to="/about" class="nav-link">About</router-link>
+      <di>
+        <router-link to="/" class="nav-link">Home</router-link> 
+      </di>
+      <di>
+        <router-link to="/boxerlist" class="nav-link">boxerlist</router-link> 
+      </di>
+
+      <div>
+        <router-link to="/about" class="nav-link">About</router-link>
+
+      </div>
     </nav>
     <router-view />
   </div>

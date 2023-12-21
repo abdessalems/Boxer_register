@@ -1,17 +1,21 @@
 <template>
-    <div>
-      <h1>Boxer List</h1>
-      <BoxerList/>
-    </div>
-  </template>
-  
-  <script>
-    import BoxerList from "@/components/BoxerList.vue";
-  export default {
-    name: "BoxerList",
-    components: {
-      BoxerList,
-    },
-  };
-  </script>
-  
+  <div>
+    <h1>Boxer List</h1>
+    <BoxerList />
+  </div>
+</template>
+
+<script>
+import BoxerList from "@/components/BoxerList.vue";
+
+export default {
+  name: "BoxerListView",
+  components: {
+    BoxerList,
+  },
+};
+</script>
+
+<style scoped>
+/* Add any scoped styles for this component */
+</style>
