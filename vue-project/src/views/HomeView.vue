@@ -1,10 +1,9 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <h1>Welcome to app register of Boxer</h1>
   </div>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from "@/components/HelloWorld.vue"; 
 
 </script>

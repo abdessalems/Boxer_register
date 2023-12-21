@@ -5,12 +5,8 @@ import Signup from "../views/Signup.vue";
 import BoxerListView from '../views/BoxerList.vue';
 import HeaderView from "../views/Header.vue";
 import AddBoxer from "../views/AddBoxer.vue"; 
-import UpdateBoxer from "../views/UpdateBoxer.vue"; 
-
-
-
-
-
+import UpdateBoxerPage from "../views/UpdateBoxer.vue"; 
+import UpdateView from "../views/UpdateView.vue"; 
 
 
 
@@ -39,6 +35,12 @@ const router = createRouter({
       component: Signup,
     },
     {
+      path: "/update/:id",
+      name: "update",
+      component: UpdateView,
+    },
+    
+    {
       path: "/boxerlist",
       name: "BoxerList",
       component: BoxerListView,
@@ -54,11 +56,13 @@ const router = createRouter({
       name: "login",
       component: Login,
     },
+    
     {
-      path: "/updateboxer",
-      name: "UpdateBoxer",
-      component: UpdateBoxer,
+      path: "/updateboxer/:id",
+      name: "UpdateBoxerPage",
+      component: UpdateBoxerPage,
     },
+    
   ]
 })
 

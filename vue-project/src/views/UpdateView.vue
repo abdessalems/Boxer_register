@@ -1,14 +1,14 @@
 <template>
     <div class="container">
-      <SignUpForm />
+      <update />
     </div>
   </template>
   <script>
-  import SignUpForm from "@/components/Signup/Signup.vue";
+  import update from "@/components/Update.vue";
   export default {
-    name: "Sign-up",
+    name: "UpdateView",
     components: {
-      SignUpForm,
+        update,
     },
   };
   </script>  
