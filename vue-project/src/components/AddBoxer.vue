@@ -90,7 +90,7 @@
   
 <script setup lang="ts">
 import { ref } from 'vue';
-import router from '@/router'; 
+import router from '@/router';
 
 
 
@@ -135,10 +135,8 @@ const addBoxer = async () => {
         body: JSON.stringify(newBoxer),
     });
 
-    window.alert('Boxer deleted successfully.');
-
-    router.push({ name: 'BoxerList' });
+    window.alert('Boxer added successfully.');
+    router.push('/boxerlist');
 
 };
 </script>
-  

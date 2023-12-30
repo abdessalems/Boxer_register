@@ -9,6 +9,10 @@
         <router-link to="/about" class="nav-link">About</router-link>
         <router-link to="/boxerlist" class="nav-link">Boxer List</router-link>
         <router-link to="/addboxer" class="nav-link">Add Boxer</router-link>
+        <router-link to="/login" class="nav-link">login</router-link>
+        <router-link to="/signup" class="nav-link">signup</router-link>
+
+
 
       </div>
     </nav>

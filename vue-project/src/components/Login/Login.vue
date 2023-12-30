@@ -11,7 +11,7 @@
           v-model="email"
           class="form-control"
           required
-          placeholder="Enter your email"
+          placeholder="Enter your email" 
         />
       </div>
 
@@ -41,24 +41,40 @@ import 'popper.js';
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const email = ref('');
 const password = ref('');
 
+const router = useRouter();
+
 const loginBoxer = async () => {
-  const credentials = {
-    email: email.value,
-    password: password.value,
-  };
+  try {
+    const credentials = {
+      email: email.value,
+      password: password.value,
+    };
 
-  await fetch('/api/auth/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(credentials),
-  });
+    const response = await fetch('/api/auth/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(credentials),
+    });
 
-  console.log('Login request sent successfully.');
+    if (response.ok) {
+      console.log('Login successful');
+      // Redirect to /boxerlist
+      router.push('/boxerlist');
+    } else {
+      console.error('Login failed:', response.statusText);
+      // Handle login failure, show an error message, etc.
+    }
+  } catch (error) {
+    console.error('Error during login:', error);
+    // Handle unexpected errors, show an error message, etc.
+  }
 };
 </script>
+
